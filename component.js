@@ -5,14 +5,14 @@
     constructor() {
       super()
       const shadow = this.attachShadow({ mode: 'open' })
-      const describe = tpl.innerHTML
+      const sourceCode = tpl.innerHTML
       const mapPropToAttr = (_, prop) => {
         const key = prop.trim()
         const attr = this.getAttribute(key)
         this.removeAttribute(key)
         return attr
       }
-      shadow.innerHTML = describe.replace(Mustache, mapPropToAttr)
+      shadow.innerHTML = sourceCode.replace(Mustache, mapPropToAttr)
     }
   }))
 })()
