@@ -1,5 +1,7 @@
 # web-component
 
+1. custom component
+
 ```html
 <!-- custom component -->
 <template id="app-main">
@@ -19,7 +21,7 @@
 <app-root />
 ```
 
-props...
+2. props
 
 ```html
 <!-- custom component -->
@@ -39,7 +41,7 @@ props...
 <!-- instance -->
 <app-root title="Header" style="color: red;" onclick="alert('footer!!')" />
 ```
-scoped style...
+3. scoped style
 ```html
 <!-- custom component -->
 <template id="app-main">
